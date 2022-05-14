@@ -70,7 +70,7 @@ app.get('/filtergender/:Gender', (req, res) =>{
 
             let message= "" ;
             if(results === undefined||results.length == 0){
-                message = "size not found";
+                message = "Gender not found";
             }else{
                 message="Successfully";
             }
