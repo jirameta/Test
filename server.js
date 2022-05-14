@@ -79,26 +79,6 @@ app.get('/filtergender/:Gender', (req, res) =>{
     }
 })
 
-app.get('/filtergender/:Gender', (req, res) =>{
-    let Gender = req.params.Gender;
-
-    if(!Gender){
-        return res.status(400).send( {error : true, message:"Please input size"});
-    }else{
-        dbCon.query("SELECT * FROM category WHERE Gender = ?", Gender, (error, results, fields) =>{
-            if (error) throw error;
-
-            let message= "" ;
-            if(results === undefined||results.length == 0){
-                message = "size not found";
-            }else{
-                message="Successfully";
-            }
-            return res.send({error:false, data:results[0], message:message})
-        })
-    }
-})
-
 app.get('/Show/:number',(req, res) =>{
     let number=req.params.number;
 
