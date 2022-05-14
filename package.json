@@ -1,25 +1,21 @@
 {
-  "name": "test",
+  "name": "index",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jirameta/Test.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jirameta/Test/issues"
-  },
-  "homepage": "https://github.com/jirameta/Test#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "express": "^4.18.1",
+    "my": "^0.3.3",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.16"
-  }
+    "nodemon": "^2.0.16",
+    "sql": "^0.78.0"
+  },
+  "keywords": [],
+  "description": ""
 }
